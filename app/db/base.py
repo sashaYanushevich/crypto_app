@@ -1,3 +1,12 @@
 from app.db.base_class import Base
 from app.models.user import User
-
+from app.models.achievement import Achievement
+from app.models.user_achievements import UserAchievement
+from app.models.inventory_items import InventoryItem
+from app.models.user_inventory import UserInventory
+from app.models.tasks import Task
+from app.models.user_tasks import UserTask
+from app.models.earnings import Earning
+from app.models.pending_referral_rewards import PendingReferralReward
+from app.models.payment import Payment
+from app.models.game_sessions import GameSession

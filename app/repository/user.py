@@ -5,8 +5,8 @@ from app.schemas.user import UserCreate
 
 class CRUDUser:
 
-    async def get_user_by_tgID(self, db: AsyncSession, tgID: int):
-        result = await db.execute(select(User).where(User.tgID == tgID))
+    async def get_user_by_tgID(self, db: AsyncSession, tg_id: int):
+        result = await db.execute(select(User).where(User.tg_id == tg_id))
         return result.scalars().first()
 
     async def create_user(self, db: AsyncSession, user_in: UserCreate):
